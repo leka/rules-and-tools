@@ -179,3 +179,155 @@ fileName; // not nomFichier, dateiName, 文件名, etc...
 ```
 English is the language of reference in computer programming.
 
+#### n. Directive
+
+``` C++
+Code example if possible.
+```
+
+Why/Motivation and additional information.
+
+#### n. Directive
+
+``` C++
+Code example if possible.
+```
+
+Why/Motivation and additional information.
+
+#### n. Directive
+
+``` C++
+Code example if possible.
+```
+
+Why/Motivation and additional information.
+
+#### n. Directive
+
+``` C++
+Code example if possible.
+```
+
+Why/Motivation and additional information.
+
+#### n. Directive
+
+``` C++
+Code example if possible.
+```
+
+Why/Motivation and additional information.
+
+#### n. Directive
+
+``` C++
+Code example if possible.
+```
+
+Why/Motivation and additional information.
+
+#### n. Directive
+
+``` C++
+Code example if possible.
+```
+
+Why/Motivation and additional information.
+
+#### n. Directive
+
+``` C++
+Code example if possible.
+```
+
+Why/Motivation and additional information.
+
+#### n. Directive
+
+``` C++
+Code example if possible.
+```
+
+Why/Motivation and additional information.
+
+#### n. Directive
+
+``` C++
+Code example if possible.
+```
+
+Why/Motivation and additional information.
+
+#### n. Directive
+
+``` C++
+Code example if possible.
+```
+
+Why/Motivation and additional information.
+
+#### n. Directive
+
+``` C++
+Code example if possible.
+```
+
+Why/Motivation and additional information.
+
+#### n. Directive
+
+``` C++
+Code example if possible.
+```
+
+Why/Motivation and additional information.
+
+#### n. Directive
+
+``` C++
+Code example if possible.
+```
+
+Why/Motivation and additional information.
+
+#### n. Directive
+
+``` C++
+Code example if possible.
+```
+
+Why/Motivation and additional information.
+
+#### n. Directive
+
+``` C++
+Code example if possible.
+```
+
+Why/Motivation and additional information.
+
+#### n. Directive
+
+``` C++
+Code example if possible.
+```
+
+Why/Motivation and additional information.
+
+#### n. Directive
+
+``` C++
+Code example if possible.
+```
+
+Why/Motivation and additional information.
+
+#### n. Directive
+
+``` C++
+Code example if possible.
+```
+
+Why/Motivation and additional information.
+
