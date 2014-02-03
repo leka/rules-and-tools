@@ -133,27 +133,49 @@ Common practice in C++ development. Using only uppercase letters for the name wo
 
 The use of global variables in forbidden. In this case a `singleton pattern` should be considered.
 
-#### n. Directive
+#### 9. In a `class`, a private attribute must be prefixed by and underscore.
 
 ``` C++
-Code example if possible.
+class MyClass {
+
+   private:
+
+      uint16_t _privateVariable;
+
+}
 ```
 
-Common practice in C++ development.
+Apart from its `name` and its `type`, the variable's `scope` is important. Using an underscore as a prefix for a private variable helps the distinction from local variables and must therefore be considered with care by the developer.
 
-#### n. Directive
+The underscore also resolve the problem of finding a proper name for setters and constructors:
 
 ``` C++
-Code example if possible.
+void setDepth(int depth) {
+   _depth = depth;:w
+}
 ```
 
-Common practice in C++ development.
-
-#### n. Directive
+#### 10. A generic variable must have the same name as its type.
 
 ``` C++
-Code example if possible.
+void setTopic(Topic *topic);
+void connect(Database *database);
 ```
 
-Common practice in C++ development.
+It reduces the complexity by limiting the number of terms and names used. It makes it also easier to identify a variable type thanks to its name. If, for any reason, this rule does not seem to apply well, it's because the name of the type is poorly chosen.
+
+Non-generic variables have a role. They can often be named by combining the role and type:
+
+``` C++
+void setTopic(Topic *topic);
+Point startingPoint, centerPoint;
+Name loginName;
+```
+
+#### 11. All names are must be written in English.
+
+``` C++
+fileName; // not nomFichier, dateiName, 文件名, etc...
+```
+English is the language of reference in computer programming.
 
