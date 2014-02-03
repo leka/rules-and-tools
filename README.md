@@ -16,10 +16,8 @@ If you want to help us and code in one of the following languages, you must foll
 
 ## The Git way of life
 
-Here is a little poem to `git`in peace. Enjoy!
-
->Git you must master
-A Github account you must have
-
-
 Before starting coding with Leka, you must know how to use `git` in an efficient and elegant way.
+
+We use `git` the same way [Vincent Driessen](https://twitter.com/nvie) does, so we urge you to read his beautiful and [Successful Git branchin model](http://nvie.com/posts/a-successful-git-branching-model/).
+
+If you want to work with us, you'll be tested on the subject! ;)
