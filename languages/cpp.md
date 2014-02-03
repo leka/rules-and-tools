@@ -33,9 +33,9 @@ The source code should always be considered outside the development environment 
 
 Rules are numbered and will be shown as follow:
 
-####n. Directive
+#### n. Directive
 
-```
+``` C++
 Code example if possible.
 ```
 
@@ -47,10 +47,113 @@ In the directive part, verbs like **must**, **should** and **can**, all have spe
 
 ## General Rules
 
-#### 1. Any non-compliance is permitted if it allows for better readability. 
+#### 1. Any non-compliance is permitted if it allows for better readability.
 
-```
-Code example if possible.
+``` C++
+n/a
 ```
 
 The main purpose of these rules is to improve readability and thus the understanding, maintainability and the general quality of the code. It is not possible to cover all the specific cases in this document and the developer must be flexible.
+
+## Naming rules
+
+### General naming rules
+
+#### 1. A name representing a `type` must be mixed case and begin with an uppercase letter.
+
+``` C++
+SuperClass, Type, Object
+```
+
+Common practice in C++ development.
+
+#### 2. A `variable` must be in mixed case and begin with a lowercase letter.
+
+``` C++
+variable, myVariable, anotherVariable, ohLookAnotherVariable
+```
+
+Common practice in C++ development. Helps the distinction with `type`s and potentially avoids collision when declaring `Object object`.
+
+#### 3. `constant`s and `enumeration`s must be fully uppercase, the words being separated by underscores.
+
+``` C++
+CONSTANT, PI, MY_CONSTANT, MY_OTHER_CONSTANT
+```
+
+Common practice in C++ development. As a general rule, the use of constants should be minimized. Using a method is better:
+
+``` C++
+int getMaxValue() {
+   return 10;
+}
+```
+
+This form is better for unified class interfaces and allows us to implement a method to compute the constant.
+
+#### 4. A name given to a `method` or a `function` must be a verb and be written in mixed case starting with a lowercase letter.
+
+``` C++
+getValue(), computeSomething()
+```
+
+Common practice in C++ development. Same name as variable but functions are easily distinguishable by their specific form.
+
+#### 5. A name representing a `namespace` must be entirely lowercase.
+
+``` C++
+leka::moti, common::data, drivesystem::motors
+```
+
+Common practice in C++ development.
+
+#### 6. A name representing a `template` must be a single uppercase letter.
+
+``` C++
+template <class T>...
+template <class K, class V>...
+```
+
+Common practice in C++ development. Template names remain identifiable compared to all other names used.
+
+#### 7. Abbreviations and acronyms should not be uppercase when used as names.
+
+``` C++
+exportHtmlSource();
+openDvdPlayer();
+```
+
+Common practice in C++ development. Using only uppercase letters for the name would be in conflict with Naming Rule [#2](#) and result in strange variable names line `hTML` or `dVD`...
+
+#### 8. `global variable`s must be referenced using the `::` operator.
+
+``` C++
+::globalVariable
+```
+
+The use of global variables in forbidden. In this case a `singleton pattern` should be considered.
+
+#### n. Directive
+
+``` C++
+Code example if possible.
+```
+
+Common practice in C++ development.
+
+#### n. Directive
+
+``` C++
+Code example if possible.
+```
+
+Common practice in C++ development.
+
+#### n. Directive
+
+``` C++
+Code example if possible.
+```
+
+Common practice in C++ development.
+
