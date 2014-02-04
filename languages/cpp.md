@@ -142,7 +142,7 @@ class MyClass {
 
       uint16_t _privateVariable;
 
-}
+};
 ```
 
 Apart from its `name` and its `type`, the variable's `scope` is important. Using an underscore as a prefix for a private variable helps the distinction from local variables and must therefore be considered with care by the developer.
@@ -179,29 +179,40 @@ fileName; // not nomFichier, dateiName, 文件名, etc...
 ```
 English is the language of reference in computer programming.
 
-#### n. Directive
+#### 12. A variable with a long scope should have long name. A variable with a small scope should have short name.
 
 ``` C++
-Code example if possible.
+n/a
 ```
 
-Why/Motivation and additional information.
+Short names are best suited for temporary variables and counters. A devloper reading such a variable should assume that its value is not used outside of those few lines of code.
 
-#### n. Directive
+Short variables used for:
+
+*  `int`: `i`, `j`, `k`, `m`, `n`
+*  `char`: `c`
+*  `float`: `f`
+
+#### 13. The name of an `object` must be implicite and should not be repeated in the name of a `method`.
 
 ``` C++
-Code example if possible.
+line.getLength(); // NOT: line.getLineLength();
 ```
 
-Why/Motivation and additional information.
+What feels natural when declaring the `class` becomes unecessary when used.
 
-#### n. Directive
+### Specific naming rules
+
+#### 1. `get` and `set` must be used for a direct access to an attribute.
 
 ``` C++
-Code example if possible.
+person.getName();
+person.setName(name);
+image.getValue(x, y);
+image.setValue(2, 3, value);
 ```
 
-Why/Motivation and additional information.
+`getter` and `setter` are a common practice in C++ development. In Java, this convention has become a standard.
 
 #### n. Directive
 
