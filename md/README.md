@@ -16,15 +16,13 @@ Of course `.md` are useless if you want to send your business plan to an investo
 
 This document gathers documentation found at different places on the Internet.
 
-## General documentation
+## Markdown Documentation & Elements
 
 Most of the time we follow the standard [Markdown documentation](https://daringfireball.net/projects/markdown/syntax) by [John Gruber](https://daringfireball.net/).
 
 We will only document our specific aspects. Those aspects are compatible with a `.docx` or `.pdf` export.
 
 **IMPORTANT:** Beware if you try to use exotic features like tables, we haven't tried them out yet. Stay tuned for improvement in the future.
-
-## Document Elements
 
 ### Headers
 
@@ -72,3 +70,28 @@ By doing so, you can reference your images this way:
 ```
 
 ### Footnotes
+
+When writing a report, a business plan or anything else, it's always convenient to put your sources as footnotes.
+
+The raw version of Mardown doesn't really support footnotes but Pandoc does provide a way to write footnotes for `.md` and export them as real `.docx` footnotes for Word.
+
+Here is an exemple from the Pandoc documentation:
+
+```
+Here is a footnote reference,[^1] and another.[^longnote]
+
+[^1]: Here is the footnote.
+
+[^longnote]: Here's one with multiple blocks.
+
+	Subsequent paragraphs are indented to show that they belong to the previous footnote.
+
+		{ some.code  }
+
+	The whole paragraph can be indented, or just the first line.  In this way, multi-paragraph footnotes work like multi-paragraph list items.
+This paragraph won't be part of the note, because it isn't indented.
+```
+
+## Pandoc documentation
+
+
