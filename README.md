@@ -6,6 +6,14 @@ When you work with a team, you have to define some rules and coding styles so th
 
 So here we go ! Short and not so short descriptions and how-to's about the rules and tools used by the Leka team.
 
+## The Git way of life
+
+Before starting coding with Leka, you must know how to use `git` in an efficient and elegant way.
+
+We use `git` the same way [Vincent Driessen](https://twitter.com/nvie) does, so we urge you to read his beautiful and [Successful Git branchin model](http://nvie.com/posts/a-successful-git-branching-model/).
+
+If you want to work with us, you'll be tested on the subject! ;)
+
 ## Coding styles and rules
 
 >***One does not simply start coding with Leka.***
@@ -14,10 +22,10 @@ If you want to help us and code in one of the following languages, you must foll
 
 *	[C++ coding rules](/languages/cpp.md)
 
-## The Git way of life
+## The perfect toolbox
 
-Before starting coding with Leka, you must know how to use `git` in an efficient and elegant way.
+### Markdown & Pandoc
 
-We use `git` the same way [Vincent Driessen](https://twitter.com/nvie) does, so we urge you to read his beautiful and [Successful Git branchin model](http://nvie.com/posts/a-successful-git-branching-model/).
+At Leka we use markdown for pretty much everything. Its simplicity and beauty combined with the power of `pandoc` makes the perfect productivity tool.
 
-If you want to work with us, you'll be tested on the subject! ;)
+[Markdown & Pandoc How-To](./md/README.md)
