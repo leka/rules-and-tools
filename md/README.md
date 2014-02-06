@@ -77,7 +77,7 @@ The raw version of Mardown doesn't really support footnotes but Pandoc does prov
 
 Here is an exemple from the Pandoc documentation:
 
-```
+``` Markdown
 Here is a footnote reference,[^1] and another.[^longnote]
 
 [^1]: Here is the footnote.
@@ -86,7 +86,7 @@ Here is a footnote reference,[^1] and another.[^longnote]
 
 	Subsequent paragraphs are indented to show that they belong to the previous footnote.
 
-		{ some.code  }
+		{ some.code }
 
 	The whole paragraph can be indented, or just the first line.  In this way, multi-paragraph footnotes work like multi-paragraph list items.
 This paragraph won't be part of the note, because it isn't indented.
@@ -94,4 +94,6 @@ This paragraph won't be part of the note, because it isn't indented.
 
 ## Pandoc documentation
 
+From the [Pandoc documentation](https://github.com/jgm/pandoc):
 
+> Pandoc is a [Haskell](http://www.haskell.org/haskellwiki/Haskell) library for converting from one markup format to another, and a command-line tool that uses this library.
