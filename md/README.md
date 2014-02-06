@@ -114,3 +114,26 @@ From the [Pandoc documentation](https://github.com/jgm/pandoc):
 
 ### How to install
 
+To install Pandoc, you can the installer for your operating system or you can build it from source.
+
+The easiest way is to use the installer that you can download from the [installation page](http://johnmacfarlane.net/pandoc/installing.html).
+
+On Mac OS X, if you want to install it from source, you can do as follow:
+
+``` Shell
+$ brew install haskell-platform
+$ cabal update
+$ cabal install --force pandoc pandoc-citeproc
+```
+
+### How to convert
+
+#### From `.md` to `.docx`
+
+It's pretty simple:
+
+``` Shell
+pandoc -sS MyMarkdownFile.md -o MyDocxFile.docx
+```
+
+And that's all folks! :)
