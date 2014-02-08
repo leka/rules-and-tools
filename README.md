@@ -28,4 +28,4 @@ If you want to help us and code in one of the following languages, you must foll
 
 At Leka we use markdown for pretty much everything. Its simplicity and beauty combined with the power of `pandoc` makes the perfect productivity tool.
 
-[Markdown & Pandoc How-To](./md/README.md)
+[How To Markdown & Pandoc](./md/README.md)
