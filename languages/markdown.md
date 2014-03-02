@@ -4,11 +4,11 @@
 
 At Leka, we decided that it would be more convenient to use `.md` for everything we write. Our reasons are simple:
 
-*	no need to use Microsoft Word: a simple text editor is enough
+*	no need to use Microsoft Word: a simple text editor is enough *most of the time*
 *	speed of editing: large files are just text
-*	ease of formating: no need to find the Header 1 style in the list, you just write `##`
+*	ease of formating: no need to find the Header 1 style in the list, you just write `# Header 1`
 *	content and form are finally independent
-*	you can use your favorite `scm` to track, collaborate and manage all your precious content
+*	you can use your favorite `scm` to track, collaborate and manage all your precious documents
 
 Markdown is designed to be easy to write, and, even more importantly, easy to read:
 
@@ -18,26 +18,25 @@ Of course `.md` are useless if you want to send your business plan to an investo
 
 ## Markdown
 
-The version of markdown that we  use is a revision of the [standard markdown](https://daringfireball.net/projects/markdown/syntax) by [John Gruber](https://daringfireball.net/).
+The version of markdown that we use,[Markdown Extended](http://johnmacfarlane.net/pandoc/README.html#pandocs-markdown) by [Pandoc](#link), is a revision of the [standard markdown](https://daringfireball.net/projects/markdown/syntax) by [John Gruber](https://daringfireball.net/).
 
 The [Pandoc website](http://johnmacfarlane.net/pandoc/) has an incredibly rich documentation about this [Pandoc Flavored Markdown](http://johnmacfarlane.net/pandoc/README.html#pandocs-markdown).
 
 We really recommend you to read this documentation because it might be very useful for your personal project as well.
 
-We will only document our specific aspects and how we use them.
+We will only document our specific aspects and how we use them. We'll be brief and link to the official documentation for further information.
 
 **IMPORTANT:** Beware if you try to use exotic features like tables, we haven't tried them out yet. Stay tuned for improvements in the future.
 
 ### Headers
 
-We use headers from `0` to `5`. Number `0` is the title of the document and therefore **should not** be used more than **once**.
+We use headers from `1` to `5`.
 
-*	#		--> Title of the document
-*	##		--> Header 1
-*	###		--> Header 2
-*	####	--> Header 3
-*	#####	--> Header 4
-*	######	--> Header 5
+*	`#`			--> Header 1
+*	`##`		--> Header 2
+*	`###`		--> Header 3
+*	`####`		--> Header 4
+*	`#####`		--> Header 5
 
 Link to Pandoc documentation: [Headers](http://johnmacfarlane.net/pandoc/README.html#headers)
 
@@ -61,18 +60,20 @@ You must make sure your images have the right size so you won't have to resize t
 
 This repo is a good exemple:
 
-```
-.
-|-- README.md
-|-- example.md
+```Shell
+MyDirectory
+|-- Part-1-Introduction.md
+|-- Part-2-Team.md
+|-- Part-3-Product.md
 `-- img
-    |-- Logo_Leka_Small.png
-	    `-- Logo_Moti_Sphere_Large-02.png
+    |-- MyImage-1.png
+    |-- MyImage-2.png
+    `-- MyImage-3.png
 ```
 
 By doing so, you can reference your images this way:
 
-```
+```Markdown
 ![My Super Logo](./img/Logo_Leka_Small.png)
 ```
 
@@ -86,7 +87,7 @@ The raw version of markdown doesn't support footnotes but Pandoc does provide a 
 
 Here is an exemple from the Pandoc documentation:
 
-``` Markdown
+```Markdown
 Here is a footnote reference,[^1] and another.[^longnote]
 
 [^1]: Here is the footnote.
@@ -120,7 +121,7 @@ The easiest way is to use the installer that you can download from the [installa
 
 On Mac OS X, if you want to install it from source, you can do as follow:
 
-``` Shell
+```Shell
 $ brew install haskell-platform
 $ cabal update
 $ cabal install --force pandoc pandoc-citeproc
@@ -132,8 +133,14 @@ $ cabal install --force pandoc pandoc-citeproc
 
 It's pretty simple:
 
-``` Shell
-pandoc -sS MyMarkdownFile.md -o MyDocxFile.docx
+```Shell
+$ pandoc -sS MyMarkdownFile.md -o MyDocxFile.docx
+```
+
+And if you have plenty of `.md` files in the right order that you want to compile together, you can type the following:
+
+```Shell
+$ pandoc -sS *.md -o MyDocxFile.docx
 ```
 
 And that's all folks! :)

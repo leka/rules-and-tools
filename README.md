@@ -2,9 +2,16 @@
 
 ## About this repo
 
-When you work with a team, you have to define some rules and coding styles so that everyone can code happily altogether. There will be no fight about the identation method (spaces vs tabs), the space between `if` and the `(condition)`, the way variables are named and so on.
+When a team works on a project, it is important to define rules and coding styles. By doing do, you allow anyone to code happily with one another.
 
-So here we go ! Short and not so short descriptions and how-to's about the rules and tools used by the Leka team.
+Rules are made so that there will be no fight about things like:
+
+*	the identation method (spaces vs tabs)
+*	the space between `if` and the `(condition)`
+*	the way variables are named
+*	and so on...
+
+So here we go ! Short and not so short descriptions, how-to's, rules and tools used by the Leka team.
 
 ## The Git way of life
 
@@ -12,15 +19,24 @@ Before starting coding with Leka, you must know how to use `git` in an efficient
 
 We use `git` the same way [Vincent Driessen](https://twitter.com/nvie) does, so we urge you to read his beautiful and [Successful Git branchin model](http://nvie.com/posts/a-successful-git-branching-model/).
 
-If you want to work with us, you'll be tested on the subject! ;)
+If you want to work with us, prepare to be tested on the subject! ;)
 
 ## Coding styles and rules
 
 >***One does not simply start coding with Leka.***
 
-If you want to help us and code in one of the following languages, you must follow the rules:
+### .editorconfig
+
+To make sure basic rules like `tabs` are followed, we've made an `.editorconfig` that you can download [here]().
+
+Or 
+
+### Languages
+
+From experience and preference, we've bring those rules to your acquaintance:
 
 *	[C++ coding rules](/languages/cpp.md)
+*	[Markdown Pandoc rules](/languages/markdown.md)
 
 ## The perfect toolbox
 
