@@ -27,7 +27,7 @@ If you want to work with us, prepare to be tested on the subject! ;)
 
 ### .editorconfig
 
-To make sure basic rules like `tabs` are followed, we've made an `.editorconfig` that you can download [here]().
+To make sure basic rules like `tabs` are followed, we've made an `.editorconfig` that you can download [here](/.editorconfig).
 
 Or 
 
