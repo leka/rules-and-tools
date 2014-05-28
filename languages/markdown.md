@@ -18,7 +18,7 @@ Of course `.md` are useless if you want to send your business plan to an investo
 
 ## Markdown
 
-The version of markdown that we use,[Markdown Extended](http://johnmacfarlane.net/pandoc/README.html#pandocs-markdown) by [Pandoc](#link), is a revision of the [standard markdown](https://daringfireball.net/projects/markdown/syntax) by [John Gruber](https://daringfireball.net/).
+The version of markdown that we use,[Markdown Extended](http://johnmacfarlane.net/pandoc/README.html#pandocs-markdown) by [Pandoc](http://johnmacfarlane.net/pandoc/), is a revision of the [standard markdown](https://daringfireball.net/projects/markdown/syntax) by [John Gruber](https://daringfireball.net/).
 
 The [Pandoc website](http://johnmacfarlane.net/pandoc/) has an incredibly rich documentation about this [Pandoc Flavored Markdown](http://johnmacfarlane.net/pandoc/README.html#pandocs-markdown).
 
@@ -27,83 +27,6 @@ We really recommend you to read this documentation because it might be very usef
 We will only document our specific aspects and how we use them. We'll be brief and link to the official documentation for further information.
 
 **IMPORTANT:** Beware if you try to use exotic features like tables, we haven't tried them out yet. Stay tuned for improvements in the future.
-
-### Headers
-
-We use headers from `1` to `5`.
-
-*	`#`			--> Header 1
-*	`##`		--> Header 2
-*	`###`		--> Header 3
-*	`####`		--> Header 4
-*	`#####`		--> Header 5
-
-Link to Pandoc documentation: [Headers](http://johnmacfarlane.net/pandoc/README.html#headers)
-
-### Paragraphs
-
-Link to Pandoc documentation: [Paragraphs](http://johnmacfarlane.net/pandoc/README.html#paragraphs)
-
-### Lists
-
-Link to Pandoc documentation: [Lists](http://johnmacfarlane.net/pandoc/README.html#lists)
-
-### Inline formatting
-
-Link to Pandoc documentation: [Inline formatting](http://johnmacfarlane.net/pandoc/README.html#inline-formatting)
-
-### Images
-
-Images can be included inside a `.docx` document.
-
-You must make sure your images have the right size so you won't have to resize them all in Word. We also recommend putting your images in an `img` folder inside your `project` folder.
-
-This repo is a good exemple:
-
-```Shell
-MyDirectory
-|-- Part-1-Introduction.md
-|-- Part-2-Team.md
-|-- Part-3-Product.md
-`-- img
-    |-- MyImage-1.png
-    |-- MyImage-2.png
-    `-- MyImage-3.png
-```
-
-By doing so, you can reference your images this way:
-
-```Markdown
-![My Super Logo](./img/Logo_Leka_Small.png)
-```
-
-Link to Pandoc documentation: [Images](http://johnmacfarlane.net/pandoc/README.html#images)
-
-### Footnotes
-
-When writing a report, a business plan or anything else, it's always convenient to put your sources as footnotes.
-
-The raw version of markdown doesn't support footnotes but Pandoc does provide a way to write footnotes for `.md` and export them as real `.docx` footnotes for Word.
-
-Here is an exemple from the Pandoc documentation:
-
-```Markdown
-Here is a footnote reference,[^1] and another.[^longnote]
-
-[^1]: Here is the footnote.
-
-[^longnote]: Here's one with multiple blocks.
-
-	Subsequent paragraphs are indented to show that they belong to the previous footnote.
-
-		{ some.code }
-
-	The whole paragraph can be indented, or just the first line.  In this way, multi-paragraph footnotes work like multi-paragraph list items.
-
-This paragraph won't be part of the note, because it isn't indented.
-```
-
-Link to Pandoc documentation: [Footnotes](http://johnmacfarlane.net/pandoc/README.html#footnotes)
 
 ## Pandoc documentation
 
@@ -142,5 +65,102 @@ And if you have plenty of `.md` files in the right order that you want to compil
 ```Shell
 $ pandoc -sS *.md -o MyDocxFile.docx
 ```
+#### From `.md` to `.pdf`
+
+It's pretty simple:
+
+```Shell
+$ pandoc -sS MyMarkdownFile.md -o MyDocxFile.pdf
+```
+
+And if you have plenty of `.md` files in the right order that you want to compile together, you can type the following:
+
+```Shell
+$ pandoc -sS *.md -o MyDocxFile.pdf
+```
+
+## General features
+
+Here after are all the features that we use as is, out of the box, with no specific rules.
+
+*	[Paragraphs](http://johnmacfarlane.net/pandoc/README.html#paragraphs)
+*	[Lists](http://johnmacfarlane.net/pandoc/README.html#lists)
+*	[Inline formatting](http://johnmacfarlane.net/pandoc/README.html#inline-formatting)
+*	[Verbatim (code) blocks](http://johnmacfarlane.net/pandoc/README.html#verbatim-code-blocks)
+
+## Specific features
+
+Here after are all the features we use in a certain way and that are important to keep consistency in all our documents.
+
+### Headers
+
+We use headers from `1` to `5`.
+
+*	`#`			--> Header 1
+*	`##`		--> Header 2
+*	`###`		--> Header 3
+*	`####`		--> Header 4
+*	`#####`		--> Header 5
+
+Link to Pandoc documentation: [Headers](http://johnmacfarlane.net/pandoc/README.html#headers)
+
+### Images
+
+Images can be included inside a `.docx` document.
+
+You must make sure your images have the right size so you won't have to resize them all in Word. We also recommend putting your images in an `img` folder inside your `project` folder.
+
+This repo is a good exemple:
+
+```Shell
+MyDirectory
+|-- Part-1-Introduction.md
+|-- Part-2-Team.md
+|-- Part-3-Product.md
+`-- img
+    |-- MyImage-1.png
+    |-- MyImage-2.png
+    `-- MyImage-3.png
+```
+
+By doing so, you can reference your images this way:
+
+```Markdown
+Some paragraph...
+
+![My Super Logo](./img/Logo_Leka_Small.png)
+
+Some other paragraph...
+```
+
+Link to Pandoc documentation: [Images](http://johnmacfarlane.net/pandoc/README.html#images)
+
+### Footnotes
+
+When writing a report, a business plan or anything else, it's always convenient to put your sources as footnotes.
+
+The raw version of markdown doesn't support footnotes but Pandoc does provide a way to write footnotes for `.md` and export them as real `.docx` footnotes for Word.
+
+Here is an exemple from the Pandoc documentation:
+
+```Markdown
+Here is a footnote reference,[^1] and another.[^longnote]
+
+[^1]: Here is the footnote.
+
+[^longnote]: Here's one with multiple blocks.
+
+	Subsequent paragraphs are indented to show that they belong to the previous footnote.
+
+		{ some.code }
+
+	The whole paragraph can be indented, or just the first line.  In this way, multi-paragraph footnotes work like multi-paragraph list items.
+
+This paragraph won't be part of the note, because it isn't indented.
+```
+
+Link to Pandoc documentation: [Footnotes](http://johnmacfarlane.net/pandoc/README.html#footnotes)
+
+## Conclusion
 
 And that's all folks! :)
