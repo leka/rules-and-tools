@@ -2,10 +2,9 @@
 
 ## Revision History
 
-|Revision	| Author	| Date (dd/mm/yyyy)	| Comment(s)
-|:-------------:|:-------------:|:---------------------:|:-------------
-| **01**	| mickael@leka	| 15/11/2012		| Document creation
-| **02**	| ladislas@leka	| 28/01/2014		| English translation and github push
+*	**Revision** - **Author** - **Date (dd/mm/yyyy)** - **Comment(s)**
+*	**01** - Michael Guerra - 15/11/2012 - Document creation
+*	**02** - Ladislas de Toldi - 28/01/2014 - English translation and github push
 
 ## Introduction
 
